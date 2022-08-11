@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('index');
 });
 Route::get('/layout', function(){
     return  view('layout.layout');
@@ -22,12 +22,7 @@ Route::get('/layout', function(){
 Route::get('/index', function(){
     return  view('index');
 });
-Route::get('/contato', function(){
-    return  view('contato');
-});
-Route::get('/skill', function(){
-    return  view('skill');
-});
+
 Route::get('/test', function(){
     return  view('test.test');
 });
